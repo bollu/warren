@@ -3,8 +3,9 @@
 
 all: build openpaper
 
-static/paper.html: src/Main.lhs
-	pandoc --smart -f markdown+lhs -t html+lhs -s  --highlight-style pygments src/Main.lhs -o static/index.html
+docs/index.html: src/Main.lhs
+	mkdir -p docs
+	pandoc --smart -f markdown+lhs -t html+lhs -s  --highlight-style pygments src/Main.lhs -o docs/index.html
 
 paper/paper.tex: src/Main.lhs
 	pandoc src/Main.lhs -o paper/paper.tex
