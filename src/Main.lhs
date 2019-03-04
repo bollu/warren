@@ -1,4 +1,4 @@
-<h1> title here </h1>
+<h1> The warren abstract machine </h1>
 \begin{code}
 module Main where
 
