@@ -1,9 +1,11 @@
-Warren
-======
+[Warren (Link to literate file)](https://bollu.github.io/warren/)
+=========================================
 
 An implementation of the 
 [warren abstract machine](http://wambook.sourceforge.net/wambook.pdf),
 as a learning exercise in Haskell parallelism.
+
+## Reading material
 
 ## Building from source
 
