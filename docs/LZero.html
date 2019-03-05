@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1>
+The LZero language
+</h1>
+<blockquote>
+<p>module LZero where Variables are just strings. data V = V String</p>
+</blockquote>
+<p>As are constants. &gt; data C = C String</p>
+<p>Structures consist of a constant and a list of subterms. &gt; data S = S C [S] Thus, a consant is a special case of a structure with arity <code>0</code>.</p>
+</body>
+</html>

@@ -20,7 +20,7 @@ Recommend setting up the `post-commit` hook so the docs auto-build:
 
 ```
 $ (at root of repo)
-$ cp post-commit .git/hooks
+$ ln -s $(pwd)/post-commit .git/hooks/post-commit
 ```
 
 To build, simply use `cabal`:

@@ -1,9 +1,8 @@
 <h1> The warren abstract machine </h1>
 
-<h2> Foo </h2>
-\begin{code}
-module Main where
+- [The `LZero` language, which is the most basic](LZero.html)
 
-main :: IO ()
-main = putStrLn "Hello, Haskell!"
-\end{code}
+> module Main where
+
+> main :: IO ()
+> main = putStrLn "Hello, Haskell!"

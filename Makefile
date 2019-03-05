@@ -1,11 +1,12 @@
-.PHONY: openpaper all
+.PHONY: openpaper all html
 
 
 all: build openpaper
 
-docs/index.html: src/Main.lhs
+html: src/Main.lhs src/LZero.lhs
 	mkdir -p docs
 	pandoc --smart -f markdown+lhs -t html+lhs -s  --highlight-style pygments src/Main.lhs -o docs/index.html
+	pandoc --smart -f markdown+lhs -t html+lhs -s  --highlight-style pygments src/LZero.lhs 
 
 paper/paper.tex: src/Main.lhs
 	pandoc src/Main.lhs -o paper/paper.tex

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
-make -C $(git rev-parse --show-toplevel) docs/index.html
-git add docs/index.html
+make -C $(git rev-parse --show-toplevel) html
+git add docs/
 git commit -m "Build index.html for commit $(git rev-parse --short HEAD)"
 
 
