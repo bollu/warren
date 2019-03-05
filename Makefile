@@ -1,7 +1,7 @@
 .PHONY: openpaper all html
 
 
-all: build html
+all: build
 
 html: src/Main.lhs src/LZero.lhs
 	mkdir -p docs
