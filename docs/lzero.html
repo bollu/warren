@@ -46,13 +46,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <h1>
-The warren abstract machine
+The LZero language
 </h1>
-<ul>
-<li><a href="lzero.html">The <code>LZero</code> language, which is the most basic</a></li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt; main ::</span> <span class="dt">IO</span> ()
-<span class="ot">&gt;</span> main <span class="fu">=</span> putStrLn <span class="st">&quot;Hello, Haskell!&quot;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">module</span> <span class="dt">LZero</span> <span class="kw">where</span></code></pre></div>
+<p>Variables are just strings.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">data</span> <span class="dt">V</span> <span class="fu">=</span> <span class="dt">V</span> <span class="dt">String</span></code></pre></div>
+<p>As are constants.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">data</span> <span class="dt">C</span> <span class="fu">=</span> <span class="dt">C</span> <span class="dt">String</span></code></pre></div>
+<p>Structures consist of a constant and a list of subterms.</p>
+<div class="sourceCode"><pre class="sourceCode literate literatehaskell"><code class="sourceCode literatehaskell"><span class="ot">&gt;</span> <span class="kw">data</span> <span class="dt">S</span> <span class="fu">=</span> <span class="dt">S</span> <span class="dt">C</span> [<span class="dt">S</span>]</code></pre></div>
+<p>Thus, a consant is a special case of a structure with arity <code>0</code>.</p>
 </body>
 </html>
