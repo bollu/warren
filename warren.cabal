@@ -54,7 +54,7 @@ executable warren
   main-is:             Main.lhs
 
   -- Modules included in this executable, other than Main.
-  -- other-modules:
+  other-modules: LZero
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
