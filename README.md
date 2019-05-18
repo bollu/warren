@@ -11,7 +11,7 @@ be a very interesting expriment of the `deltas` infrastructure for an
 abstract machine such as `Warren`.
 
 ## Reading material
-- [The warren abstract machine, A tutorial reconstruction](http://wambook.sourceforge.net/wambook.pdf)
+- [The warren abstract machine, A tutorial reconstruction](warren-abstract-machine-prolog.pdf)
 - [Datalog lecture notes](https://www.cs.cmu.edu/~fp/courses/lp/lectures/26-datalog.pdf)
 - [Logic programming course@CMU](https://www.cs.cmu.edu/~fp/courses/lp/)
 ## Building from source
